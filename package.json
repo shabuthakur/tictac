@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "description": "",
   "scripts": {
-    
     "fix-parcel": "npx npm-force-resolutions && npm i && npm i",
     "start": "npm run clear && parcel index.html",
     "build": "npm run clear && parcel build index.html",

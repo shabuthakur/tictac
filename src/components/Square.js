@@ -1,6 +1,16 @@
-import React from 'react'
+import React from 'react';
 
-export const Square = ({value}) => {
-  // console.log(props);
-  return <button type="button">{value}</button>
-}
+const Square = ({ value, onClick, isWinningSquare }) => {
+  return (
+    <button
+      type="button"
+      className="square"
+      onClick={onClick}
+      style={{ fontWeight: isWinningSquare ? 'bold' : 'normal' }}
+    >
+      {value}
+    </button>
+  );
+};
+
+export default Square;
